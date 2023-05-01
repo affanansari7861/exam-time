@@ -17,5 +17,4 @@ function App() {
   );
 }
 
-// time pass 
 export default App;
