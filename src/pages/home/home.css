@@ -1,0 +1,103 @@
+#hero-cont{
+    background-color: var(--btn);
+    height: 100vh;
+    min-height: 480px;
+    background-image: url('../../images/background.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.desc{
+    color: white;
+    z-index: 1;
+    line-height: 28.78px;
+    max-width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+    width: 240px;
+    width: 340px;
+}
+hr{
+    z-index: 1;
+    width: 250px;
+    height: 0;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    width: 99%;
+    max-width: 450px;
+    background-color: white;   
+}
+h1{
+    z-index: 1;
+    color: white;
+    letter-spacing: 15px;
+    font-family: 'Roboto flex';    
+    font-weight: 800;
+    letter-spacing: 36 px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:black;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.started{
+    height: 40px;
+    width: 165px;
+    font-size: 16px;
+    border-radius: 6px;
+    /* pc  */
+    height: fit-content;
+    width: 70%;
+    min-width: fit-content;
+    max-width: 300px;
+    font-size: calc(var(--font-size)*1.23*1.23*1.23);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    /* commons */
+    z-index: 1;
+    margin-top: 15px;
+    
+}
+#hero-sec{
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: left;
+    flex-direction: column;
+}
+#home-content{
+    /* height: 2420px; */
+    width: 100%;
+    background-color: var(--background);
+}
+/* 360 768 */
+@media  (max-width:768px) {
+    #hero-cont{
+    background-image: url('../../images/background-mobile.jpg');
+    align-items: center;
+}
+#hero-sec{
+    width: 90%;
+
+}
+.desc{
+    line-height: 20px;
+}
+}
+#hero-cont::-webkit-scrollbar{
+    width: 0px;
+}

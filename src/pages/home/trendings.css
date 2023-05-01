@@ -1,0 +1,121 @@
+.trending-cont{
+    width: 100%;
+    padding: 0 auto;
+    margin-top: var(--font-size);
+    position: relative;
+    
+}
+.trend-papers{
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    padding: var(--font-size);
+    border-radius: 10px;
+    width: 95%;
+    height: max-content;
+    margin: 0 auto;
+    gap: 10px;
+    box-shadow: 0 0 calc(var(--font-size)/3)  var(--shadow);
+    border: 10px solid var(--background);
+}
+.trend-papers::-webkit-scrollbar{
+    display: none;
+}
+.card p,.card h6{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: calc(var(--font-size)/4);
+}
+.card{
+    min-width: var(--card-width);
+    height:var(--card-height);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.cover-page{
+    box-shadow: 0 0 calc(var(--font-size)/2)  var(--shadow);
+    width: 100%;    
+    height: 80%;
+}
+.card-foot{
+    padding: calc(var(--font-size)/16);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: calc(var(--font-size) /2);
+    box-shadow: 0 0 calc(var(--font-size)/2)  var(--shadow);
+    height: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+.card-foot h6{
+    font-size: var(--font-size);
+}
+.card-foot p{
+    font-size: calc(var(--font-size) - 2px);
+
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2.5%;
+}
+#home-content{
+    padding: var(--font-size);
+    background-color: var(--background);
+    
+}
+.trending-cont.explore .trend-papers{
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    border: none;
+    justify-content: center;
+}
+.trending-cont.explore{
+    margin-top: var(--font-size);
+}
+.more-btn{
+    position: absolute;
+    font-size: calc(var(--font-size)*1.25);
+    color: var(--btn);
+    text-decoration: none;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 2.5%;
+}
+
+@media (max-width:768px){
+    :root{
+        --card-height:180px;
+        --card-width:120px;
+        --font-size:13px;
+    }
+}
+@media (max-width:600px){
+    .trending-cont.explore .trend-papers{
+        gap:15px ;
+    }
+    
+    :root{
+        --card-height:90px;
+        --card-width:60px;
+    }
+    .cover-page{
+        height: 70%;
+
+    }
+    .card-foot{
+        height: 30%;
+        padding: 2px;
+    }
+    .card-foot h6{
+        font-size: 8px;
+        margin: 0;
+    }
+    .card-foot p{
+        font-size: 7px;
+    }
+
+}
