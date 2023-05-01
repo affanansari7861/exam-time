@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/exam-time/static/css/main.4dd80d18.css",
+    "main.js": "/exam-time/static/js/main.201cbe9b.js",
+    "static/media/background.jpg": "/exam-time/static/media/background.1cb422cbeafc59e5eafa.jpg",
+    "static/media/background-mobile.jpg": "/exam-time/static/media/background-mobile.3eb7e8a7dcba5c9d9316.jpg",
+    "static/media/et_logo.png": "/exam-time/static/media/et_logo.735b86817bfc55996136.png",
+    "static/media/book-cover.jpg": "/exam-time/static/media/book-cover.72042d6ed14dd61d037c.jpg",
+    "index.html": "/exam-time/index.html",
+    "main.4dd80d18.css.map": "/exam-time/static/css/main.4dd80d18.css.map",
+    "main.201cbe9b.js.map": "/exam-time/static/js/main.201cbe9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dd80d18.css",
+    "static/js/main.201cbe9b.js"
+  ]
+}
