@@ -6,6 +6,7 @@ import LogPanel from "./pages/register";
 function App() {
   return (
     <div id="main-wraper">
+      {/* <Home/> */}
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}></Route>

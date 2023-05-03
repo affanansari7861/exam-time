@@ -22,6 +22,7 @@ const Home = () => {
         <p >THE BEST WEBSITE FOR PREPARING EXAM AND FIND 
         SOLVED PREVIOUS YEARS QUESTION PAPERS</p>
         </div>
+        {/* <a className='btn started'><h5>GET STARTED </h5> </a> */}
         <Link className='btn started'><h5>GET STARTED </h5> </Link>
         </div>
       </div>
@@ -29,7 +30,8 @@ const Home = () => {
         
         <section className='trending-cont'>
           <h5 className='heading'>TRENDINGS</h5>
-          <Link className='more-btn'>More</Link>
+          <a className='more-btn'>More</a>
+
 
             
           <section className='trend-papers'>
@@ -51,7 +53,7 @@ const Home = () => {
         </section>
         <section className='trending-cont explore'>
           <h5 className='heading'>EXPLORE</h5>
-          <Link className='more-btn'>More</Link>
+          <a className='more-btn'>More</a>
             
           <section className='trend-papers '>
 
