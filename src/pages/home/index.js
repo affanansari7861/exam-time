@@ -5,6 +5,7 @@ import Navbar from '../navbar'
 import {data}from '../../dumydata/data'
 import './home.css'
 import './trendings.css'
+import Card from './card'
 
 
 const Home = () => {
@@ -37,16 +38,8 @@ const Home = () => {
           <section className='trend-papers'>
 
             {
-              trendings.map((item)=>{
-                return <article className='card'>
-                  <img className='cover-page' src={require('../../dumydata/book-cover.jpg')} alt=""/>
-                  <section className='card-foot'>
-                  
-                   <h6>{item.subject}</h6>
-                   <p>{item.sem} semester</p>
-                  </section>
-                  
-                </article>
+              trendings.map((item,index)=>{
+                return <Card key={index} item={item}/>
               })
             }
           </section>
@@ -58,16 +51,8 @@ const Home = () => {
           <section className='trend-papers '>
 
             {
-              data.map((item)=>{
-                return <article className='card'>
-                  <img className='cover-page' src={require('../../dumydata/book-cover.jpg')} alt=""/>
-                  <section className='card-foot'>
-                  
-                   <h6>{item.subject}</h6>
-                   <p>{item.sem} semester</p>
-                  </section>
-                  
-                </article>
+              data.map((item,index)=>{
+            return <Card key={index} item={item}/>
               })
             }
           </section>

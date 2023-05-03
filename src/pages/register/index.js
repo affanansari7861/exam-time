@@ -1,20 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const LogPanel = () => {
     const [log,setLog] = useState(false)
-    if (log === true) {
-        return (
-            <div>
-                login 
-            </div>
-  )
-    } else {
-        return (
-            <div>
-                register
-            </div>
-        )
-}
+    useEffect(()=>{
+        const panel= document.getElementById("logPanel")
+        console.log(panel);
+        panel.showModal()
+        return(panel.close())
+    },)
+   return(
+    <dialog id='logPanel'>
+        hello
+    </dialog>
+   )
 }
 
 export default LogPanel

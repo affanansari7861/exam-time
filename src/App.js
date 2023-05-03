@@ -9,7 +9,7 @@ function App() {
       {/* <Home/> */}
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/exam-time" element={<Home/>}></Route>
         <Route path="/login" element={<LogPanel/>}></Route>
         <Route path="/register" element={<h1>register</h1>}></Route>
       </Routes>

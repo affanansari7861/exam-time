@@ -14,7 +14,7 @@ const Ball = () => {
                     {/* <a className='btn btn-1 nav-btn' href={'/'}>home</a>
                     <a className='btn btn-2 nav-btn' href={'/login'}>login</a>
                     <a className='btn btn-3 nav-btn' href={'/register'}>register</a> */}
-                    <Link className='btn btn-1 nav-btn' to={'/'}>home</Link>
+                    <Link className='btn btn-1 nav-btn' to={'/exam-time'}>home</Link>
                     <Link className='btn btn-2 nav-btn' to={'/login'}>login</Link>
                     <Link className='btn btn-3 nav-btn' to={'/register'}>register</Link>
           </section>
