@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { trendings } from '../../dumydata/trendings'
 import Navbar from '../navbar'
@@ -6,9 +6,15 @@ import {data}from '../../dumydata/data'
 import './home.css'
 import './trendings.css'
 import Card from './card'
+import { useContext } from 'react'
+import { registerContext } from '../../App'
 
 
 const Home = () => {
+  const value =useContext(registerContext)
+  useEffect(()=>{
+    console.log(value);
+  })
   return (
     <>
       <Navbar></Navbar>
